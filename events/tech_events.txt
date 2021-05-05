@@ -1,0 +1,31 @@
+namespace = techevt
+country_event = {
+	id = techevt.1
+	location = from.capital_scope
+	is_triggered_only = yes
+	trigger = {
+		is_ai = no
+		last_increased_tech = tech_destroyers_unlock
+	}
+	immediate = {
+		set_country_flag = tech_destroyers_unlock_@root
+		capital_scope = {
+			create_archaeological_site = test_tech_site
+		}
+	}
+	hide_window = yes
+}
+
+fleet_event = {
+	id = techevt.2
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		owner = {
+			add_research_option = tech_destroyers
+		}
+		destroy_archaeological_site = from
+	}
+	hide_window = yes
+}

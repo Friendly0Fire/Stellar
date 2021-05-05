@@ -1,0 +1,20 @@
+tech_destroyers_unlock = {
+	cost = 50
+	area = engineering
+	tier = 1
+	category = {
+		voidcraft
+	}
+	prerequisites = {
+		"tech_corvettes"
+	}
+	weight = 1000
+	gateway = ship
+	## unlock destroyer
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_DESTROYER_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_DESTROYER_CONSTRUCTION_DESC"
+		}
+	}
+}
