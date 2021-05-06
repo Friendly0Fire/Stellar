@@ -1,0 +1,32 @@
+﻿l_english:
+ research_project_unlock:0 "§HUnlocks Research Project:§! Voidcraft"
+
+ voidcraft_rp:0 "Voidcraft Survey"
+ voidcraft_rp_desc:0 "Researching this technology will unlock a special project focusing on Voidcrafts."
+
+ techevt.project.desc:0 "Our scientists are hard at work discovering a new important technology."
+
+ techevt.phase1.name:0 "Investment Phase"
+ techevt.phase2.name:0 "Research Phase"
+ techevt.phase3.name:0 "Deployment Phase"
+ techevt.phase4.name:0 "Research Completed"
+ techevt.phase1.desc:0 "Our scientists are currently investigating methods and theories to implement the project. Cost-benefit analysis is forthcoming."
+ techevt.phase2.desc:0 "Our scientists, led by §H[Root.GetLeaderName]§!, are now working on the technology."
+ techevt.phase3.desc:0 "The technology is now complete, but needs to be deployed to the rest of the [Root.Owner.GetName]. Expected costs are being tallied."
+ techevt.phase4.desc:0 "The research has been completed and is now available for use."
+
+ techevt.phase2.min:0 "Invest the minimum."
+ techevt.phase2.mid:0 "This should receive a nominal allocation."
+ techevt.phase2.max:0 "Whatever it takes."
+
+
+ tech_destroyers_unlock:0 "$voidcraft_rp$"
+ tech_destroyers_unlock_desc:0 "$voidcraft_rp_desc$"
+ tech_destroyers_site:0 "Destroyers Research Project"
+ tech_destroyers_bonus1:0 "Improve hull strength."
+ tech_destroyers_bonus2:0 "Improve evasion"
+
+ tech_destroyers_bonus1_modifier:0 "Reinforced Destroyers"
+ tech_destroyers_bonus2_modifier:0 "Nimble Destroyers"
+
+ shipsize_destroyer_evasion_mult:0 "Destroyer Evasion"

@@ -1,31 +1,176 @@
 namespace = techevt
 country_event = {
-	id = techevt.1
+	id = techevt.10
 	location = from.capital_scope
 	is_triggered_only = yes
 	trigger = {
-		is_ai = no
 		last_increased_tech = tech_destroyers_unlock
 	}
 	immediate = {
 		set_country_flag = tech_destroyers_unlock_@root
 		capital_scope = {
-			create_archaeological_site = test_tech_site
+			create_archaeological_site = tech_destroyers_site
 		}
 	}
 	hide_window = yes
 }
+fleet_event = {
+	id = techevt.11
+	title = "techevt.phase1.name"
+	desc = techevt.phase1.desc
+	picture = GFX_evt_engineering_research
+	location = from
+	show_sound = event_laboratory_sound
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = EXCELLENT
+	}
+}
 
 fleet_event = {
-	id = techevt.2
+	id = techevt.12
+	title = "techevt.phase2.name"
+	desc = techevt.phase2.desc
+	picture = GFX_evt_engineering_research
 	location = from
+	show_sound = event_laboratory_sound
+
 	archaeology = yes
+
 	is_triggered_only = yes
+
 	immediate = {
-		owner = {
-			add_research_option = tech_destroyers
-		}
-		destroy_archaeological_site = from
+		from = { set_site_progress_locked = yes }
 	}
-	hide_window = yes
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = techevt.phase2.min
+		allow = {
+			owner = {
+				resource_stockpile_compare = { resource = minerals value >= 500 }
+			}
+		}
+		owner = {
+			add_resource = {
+				minerals = -500
+			}
+		}
+	}
+
+	option = {
+		name = techevt.phase2.mid
+		allow = {
+			owner = {
+				resource_stockpile_compare = { resource = minerals value >= 1000 }
+			}
+		}
+		owner = {
+			add_resource = {
+				minerals = -1000
+			}
+		}
+		fromfrom = { add_stage_clues = 2 }
+	}
+
+	option = {
+		name = techevt.phase2.max
+		allow = {
+			owner = {
+				resource_stockpile_compare = { resource = minerals value >= 2000 }
+			}
+		}
+		owner = {
+			add_resource = {
+				minerals = -2000
+			}
+		}
+		fromfrom = { add_stage_clues = 4 }
+	}
+}
+
+fleet_event = {
+	id = techevt.13
+	title = "techevt.phase3.name"
+	desc = techevt.phase3.desc
+	picture = GFX_evt_engineering_research
+	location = from
+	show_sound = event_laboratory_sound
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = tech_destroyers_bonus1
+		owner = {
+			add_modifier = {
+				modifier = tech_destroyers_bonus1_modifier
+			}
+		}
+	}
+
+	option = {
+		name = tech_destroyers_bonus2
+		owner = {
+			add_modifier = {
+				modifier = tech_destroyers_bonus2_modifier
+			}
+		}
+	}
+}
+
+fleet_event = {
+	id = techevt.14
+	title = "techevt.phase4.name"
+	desc = techevt.phase4.desc
+	picture = GFX_evt_engineering_research
+	location = from
+	show_sound = event_laboratory_sound
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		owner = {
+			give_technology = {
+				tech = tech_destroyers
+			}
+		}
+		hidden_effect = {
+			destroy_archaeological_site = from
+		}
+	}
+
+	option = {
+		name = EXCELLENT
+	}
 }

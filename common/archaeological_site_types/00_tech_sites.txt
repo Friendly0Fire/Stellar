@@ -1,25 +1,44 @@
 #The Baol Organism - Grunur Planet
-test_tech_site = {
-	desc = "grunur_digsite_1_desc"
-	picture = GFX_evt_baol_grunur
-	stages = 1
-	max_instances = 1
+tech_destroyers_site = {
+	desc = "techevt.project.desc"
+	picture = GFX_evt_engineering_research
+	stages = 4
 	weight = 0
 	allow = {
 		exists = leader
 		leader = {
 			leader_class = scientist
 		}
+		owner = {
+			is_ai = no
+		}
 	}
 	visible = {
 		has_country_flag = tech_destroyers_unlock_@this
 		default_site_visible_trigger = yes
 	}
+
 	stage = {
 		difficulty = 1
 		icon = GFX_archaeology_runes_C1
-		event = techevt.2
+		event = techevt.11
 	}
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_C1
+		event = techevt.12
+	}
+	stage = {
+		difficulty = 3
+		icon = GFX_archaeology_runes_C2
+		event = techevt.13
+	}
+	stage = {
+		difficulty = 1
+		icon = GFX_archaeology_runes_C3
+		event = techevt.14
+	}
+
 	on_roll_failed = {
 		from = {
 			standard_archaeological_site_on_roll_failed = {

@@ -1,0 +1,13 @@
+tech_destroyers_bonus1_modifier = {
+	shipsize_destroyer_hull_mult = 0.10
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_asteroid_belt.dds"
+	icon_frame = 1
+}
+
+tech_destroyers_bonus2_modifier = {
+	shipsize_destroyer_evasion_mult = 0.10
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_asteroid_belt.dds"
+	icon_frame = 1
+}

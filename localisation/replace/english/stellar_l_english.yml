@@ -1,0 +1,43 @@
+﻿l_english:
+ TECH_IS_DANGEROUS:0 "§GResearch Project§!"
+
+ ARC_DIFFICULTY_TYPE_DESC:0 "Each phase in a project site can have a different difficulty value. Difficulty will reduce the likelihood of getting successful results at the end of a project phase."
+ ARC_LEADER_BONUS_DESC:0 "The skill bonus will increase the likelihood of getting successful results at the end of a project phase.\n\nThis bonus increases §YBreakthrough Chance§!."
+ ARC_CLUES_DESC:0 "Clues represent how much information you have uncovered in relation to a phase in a project.\n\nClues increase §YBreakthrough Chance§!."
+ ARC_EXPEDITION_LOG:0 "Project Log"
+ ARC_EXPEDITION_LOG_TT:0 "§H$ARC_EXPEDITION_LOG$§!\nThe $ARC_EXPEDITION_LOG$ shows you the results of the last project phase."
+ ARC_ABANDON:0 "Abort Project"
+
+ FLEETORDER_EXCAVATE_BUTTON:0 "Work Site"
+ FLEETORDER_EXCAVATE_SITE:0 "Working project site."
+ FINISH_SITE_EFFECT:0 "Finish project site"
+ SET_SITE_PROGRESS_LOCKED_EFFECT:0 "Lock project site progress"
+ SET_SITE_PROGRESS_UNLOCKED_EFFECT:0 "Advance to the next project phase."
+ ARCHAEOLOGICAL_SITE_ON_ROLL_FAILED_GREATER_THAN_EQ:0 "($CHANCE|%0Y$) Result is $MIN|0Y$ or greater. Finishes phase."
+ archaeology_roll_header:1 "§H$ARCHAEOLOGICAL_SITE_BREAKTHROUGH$§!\nThis reflects the chance of your Scientist making a breakthrough while working on the current project.\n\nEvery time a phase ends, a dice (§Y1§! to §Y10§!) is rolled. The results of the roll is added with §YSkill Bonus§! and §YClues§!, then subtracted by §YDifficulty§!.\n\nThe current score before dice roll is $SCORE|0Y$.\n\n§ERoll Outcomes:§!"
+
+ ARCHAEOLOGICAL_SITE_FINISHED:0 "Project has been completed"
+ ARCHAEOLOGICAL_SITE_LOCKED:0 "Project File Locked"
+
+ alert_site_event_title:0 "Project Site Event Pending"
+ alert_site_event_instant:0 "Something has happened on one of the project sites we are currently working"
+
+ MESSAGE_ARCHAEOLOGY_SITE_FINISHED_TITLE:0 "Project Site Finished"
+ MESSAGE_ARCHAEOLOGY_SITE_FINISHED_DESC:0 "A project site in our empire has been completed"
+ MESSAGE_ARCHAEOLOGY_STAGE_FINISHED_TITLE:0 "Project Site Progress"
+ MESSAGE_ARCHAEOLOGY_STAGE_FINISHED_DESC:0 "We have unlocked the next stage of a project"
+ MESSAGE_ARCHAEOLOGY_SITE_DISCOVERED_TITLE:0 "Project Site Established"
+ MESSAGE_ARCHAEOLOGY_SITE_DISCOVERED_DESC:0 "We have established a new project site."
+
+ EXCAVATION_PROGRESS_TOOLTIP:1 "§HProject Phase§!\nProject sites are worked in phases, at the end of each phase a progress roll is made.\n\nNext phase ends in £time£ $DAYS|Y$"
+
+ CHAPTER_TITLE:0 "Phase $CHAPTER$"
+ ARCHAEOLOGICAL_SITE:0 "Project Site"
+ ARCHAEOLOGICAL_SITE_IN_SYSTEM:0 "This system contains at least one project site"
+ STAGE_IN_PROGRESS:0 "Ongoing Project"
+
+ ARCHAEOLOGICAL_SITE_ASSIGN_SCIENTIST:0 "§HAssign a scientist to begin working§!"
+ ARCHAEOLOGICAL_SITE_MAPICON_TT:0 "$NAME|H$\n$DESC$\n\n§GClick to view Project Site§!"
+
+ ARC_DIFFICULTY_TYPE_DESC:0 "Each chapter in a project can have a different difficulty value. Difficulty will reduce the likelihood of getting successful results at the end of a project phase."
+ ARC_CLUES_DESC:0 "Clues represent how much information you have uncovered in relation to a chapter in a project.\n\nClues increase §YBreakthrough Chance§!."
