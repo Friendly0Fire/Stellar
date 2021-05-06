@@ -1,0 +1,79 @@
+namespace = techrngevt
+
+# Bickering Archaeologists
+fleet_event = {
+	id = techrngevt.10
+	title = "ancrel.8055.name"
+	desc = "ancrel.8055.desc"
+	picture = GFX_evt_archaeology_camp
+	show_sound = event_whispering
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		fromfrom = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		fromfrom = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = UNFORTUNATE
+		fromfrom = { add_stage_clues = -3 }
+	}
+}
+
+# Bickering Archaeologists
+fleet_event = {
+	id = techrngevt.20
+	title = "ancrel.8055.name"
+	desc = "ancrel.8055.desc"
+	picture = GFX_evt_archaeology_camp
+	show_sound = event_whispering
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		fromfrom = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		fromfrom = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = UNFORTUNATE
+		fromfrom = { add_stage_clues = -3 }
+	}
+}
+
+# Bickering Archaeologists
+fleet_event = {
+	id = techrngevt.30
+	title = "ancrel.8055.name"
+	desc = "ancrel.8055.desc"
+	picture = GFX_evt_archaeology_camp
+	show_sound = event_whispering
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		fromfrom = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		fromfrom = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = UNFORTUNATE
+		fromfrom = { add_stage_clues = -3 }
+	}
+}

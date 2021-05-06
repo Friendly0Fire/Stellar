@@ -1,0 +1,13 @@
+site_research_project_random_events = {
+	random_list = {
+		10 = { fleet_event = { id = techrngevt.10 } }
+		10 = { fleet_event = { id = techrngevt.20 } }
+		10 = { fleet_event = { id = techrngevt.30 } }
+	}
+}
+
+pay_deployment_cost = {
+	add_resource = {
+		$RESOURCE$ = @\[ $VALUE$ * $SPRAWL$ * -1 ]
+	}
+}

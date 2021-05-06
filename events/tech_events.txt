@@ -26,14 +26,6 @@ fleet_event = {
 
 	is_triggered_only = yes
 
-	immediate = {
-		from = { set_site_progress_locked = yes }
-	}
-
-	after = {
-		from = { set_site_progress_locked = no }
-	}
-
 	option = {
 		name = EXCELLENT
 	}
@@ -147,6 +139,45 @@ fleet_event = {
 	id = techevt.14
 	title = "techevt.phase4.name"
 	desc = techevt.phase4.desc
+	picture = GFX_evt_engineering_research
+	location = from
+	show_sound = event_laboratory_sound
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = MAKE_IT_SO
+		allow = {
+			owner = {
+				can_pay_deployment_cost = {
+					RESOURCE = alloys
+					VALUE = 200
+				}
+			}
+		}
+		owner = {
+			pay_deployment_cost = {
+				RESOURCE = alloys
+				VALUE = 200
+			}
+		}
+	}
+}
+
+fleet_event = {
+	id = techevt.15
+	title = "techevt.phase5.name"
+	desc = techevt.phase5.desc
 	picture = GFX_evt_engineering_research
 	location = from
 	show_sound = event_laboratory_sound

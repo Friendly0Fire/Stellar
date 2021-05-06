@@ -2,7 +2,7 @@
 tech_destroyers_site = {
 	desc = "techevt.project.desc"
 	picture = GFX_evt_engineering_research
-	stages = 4
+	stages = 5
 	weight = 0
 	allow = {
 		exists = leader
@@ -19,30 +19,48 @@ tech_destroyers_site = {
 	}
 
 	stage = {
-		difficulty = 1
+		difficulty = 2
 		icon = GFX_archaeology_runes_C1
 		event = techevt.11
 	}
 	stage = {
-		difficulty = 2
+		difficulty = 3
 		icon = GFX_archaeology_runes_C1
 		event = techevt.12
 	}
 	stage = {
-		difficulty = 3
+		difficulty = 1
 		icon = GFX_archaeology_runes_C2
 		event = techevt.13
 	}
 	stage = {
-		difficulty = 1
+		difficulty = 0
 		icon = GFX_archaeology_runes_C3
 		event = techevt.14
+	}
+	stage = {
+		difficulty = 1
+		icon = GFX_archaeology_runes_C3
+		event = techevt.15
 	}
 
 	on_roll_failed = {
 		from = {
-			standard_archaeological_site_on_roll_failed = {
-				RANDOM_EVENTS = all_random_events
+			if = {
+				limit = {
+					OR = {
+						is_site_at_stage = 0
+						is_site_at_stage = 4
+					}
+				}
+				hidden_effect = {
+					finish_current_stage = yes
+				}
+			}
+			else = {
+				standard_archaeological_site_on_roll_failed = {
+					RANDOM_EVENTS = site_research_project_random_events
+				}
 			}
 		}
 	}

@@ -8,12 +8,15 @@
 
  techevt.phase1.name:0 "Investment Phase"
  techevt.phase2.name:0 "Research Phase"
- techevt.phase3.name:0 "Deployment Phase"
- techevt.phase4.name:0 "Research Completed"
+ techevt.phase3.name:0 "Finalization Phase"
+ techevt.phase4.name:0 "Deployment Phase"
+ techevt.phase5.name:0 "Research Completed"
+
  techevt.phase1.desc:0 "Our scientists are currently investigating methods and theories to implement the project. Cost-benefit analysis is forthcoming."
  techevt.phase2.desc:0 "Our scientists, led by §H[Root.GetLeaderName]§!, are now working on the technology."
  techevt.phase3.desc:0 "The technology is now complete, but needs to be deployed to the rest of the [Root.Owner.GetName]. Expected costs are being tallied."
- techevt.phase4.desc:0 "The research has been completed and is now available for use."
+ techevt.phase4.desc:0 "Deployment to the rest of the [Root.Owner.GetName] is in progress."
+ techevt.phase5.desc:0 "The research has been completed and is now available for use."
 
  techevt.phase2.min:0 "Invest the minimum."
  techevt.phase2.mid:0 "This should receive a nominal allocation."
@@ -29,4 +32,4 @@
  tech_destroyers_bonus1_modifier:0 "Reinforced Destroyers"
  tech_destroyers_bonus2_modifier:0 "Nimble Destroyers"
 
- shipsize_destroyer_evasion_mult:0 "Destroyer Evasion"
+ mod_shipsize_destroyer_evasion_mult:0 "Destroyer Evasion"
