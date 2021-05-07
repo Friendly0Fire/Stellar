@@ -1,10 +1,7 @@
 can_pay_deployment_cost = {
-	switch = {
-		trigger = empire_sprawl_cap_fraction
-
-	}
 	resource_stockpile_compare = {
 		resource = $RESOURCE$
-		value >= @\[ $VALUE$ * $SPRAWL$ ]
+		value >= 1
+		mult = deployment_cost_var_$ID$
 	}
 }

@@ -148,7 +148,16 @@ fleet_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		from = { set_site_progress_locked = yes }
+		from = {
+			set_site_progress_locked = yes
+		}
+		owner = {
+			set_deployment_cost = {
+				BASE = 200
+				ADD = 10
+				ID = 1
+			}
+		}
 	}
 
 	after = {
@@ -161,14 +170,14 @@ fleet_event = {
 			owner = {
 				can_pay_deployment_cost = {
 					RESOURCE = alloys
-					VALUE = 200
+					ID = 1
 				}
 			}
 		}
 		owner = {
 			pay_deployment_cost = {
 				RESOURCE = alloys
-				VALUE = 200
+				ID = 1
 			}
 		}
 	}

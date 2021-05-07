@@ -50,7 +50,7 @@ tech_destroyers_site = {
 				limit = {
 					OR = {
 						is_site_at_stage = 0
-						is_site_at_stage = 4
+						is_site_at_stage = 3
 					}
 				}
 				hidden_effect = {

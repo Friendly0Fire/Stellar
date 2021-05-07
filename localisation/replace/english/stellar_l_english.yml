@@ -10,14 +10,18 @@
 
  FLEETORDER_EXCAVATE_BUTTON:0 "Work Site"
  FLEETORDER_EXCAVATE_SITE:0 "Working project site."
+ ADD_STAGE_CLUES_EFFECT:0 "Adds $CLUES$ Insights"
  FINISH_SITE_EFFECT:0 "Finish project site"
  SET_SITE_PROGRESS_LOCKED_EFFECT:0 "Lock project site progress"
  SET_SITE_PROGRESS_UNLOCKED_EFFECT:0 "Advance to the next project phase."
  ARCHAEOLOGICAL_SITE_ON_ROLL_FAILED_GREATER_THAN_EQ:0 "($CHANCE|%0Y$) Result is $MIN|0Y$ or greater. Finishes phase."
- archaeology_roll_header:1 "§H$ARCHAEOLOGICAL_SITE_BREAKTHROUGH$§!\nThis reflects the chance of your Scientist making a breakthrough while working on the current project.\n\nEvery time a phase ends, a dice (§Y1§! to §Y10§!) is rolled. The results of the roll is added with §YSkill Bonus§! and §YClues§!, then subtracted by §YDifficulty§!.\n\nThe current score before dice roll is $SCORE|0Y$.\n\n§ERoll Outcomes:§!"
+ archaeology_roll_header:1 "§H$ARCHAEOLOGICAL_SITE_BREAKTHROUGH$§!\nThis reflects the chance of your Scientist making a breakthrough while working on the current project.\n\nEvery time a phase ends, a dice (§Y1§! to §Y10§!) is rolled. The results of the roll is added with §YSkill Bonus§! and §YInsights§!, then subtracted by §YDifficulty§!.\n\nThe current score before dice roll is $SCORE|0Y$.\n\n§ERoll Outcomes:§!"
 
  ARCHAEOLOGICAL_SITE_FINISHED:0 "Project has been completed"
  ARCHAEOLOGICAL_SITE_LOCKED:0 "Project File Locked"
+
+ IS_NOT_ARCHAEOLOGICAL_SITE_CLUES_TRIGGER:0 "Site Insights NOT $COMPARE$ $NUM_COMPARE$"
+ IS_ARCHAEOLOGICAL_SITE_CLUES_TRIGGER:0 "Site Insights $COMPARE$ $NUM_COMPARE$"
 
  alert_site_event_title:0 "Project Site Event Pending"
  alert_site_event_instant:0 "Something has happened on one of the project sites we are currently working"
@@ -28,6 +32,8 @@
  MESSAGE_ARCHAEOLOGY_STAGE_FINISHED_DESC:0 "We have unlocked the next stage of a project"
  MESSAGE_ARCHAEOLOGY_SITE_DISCOVERED_TITLE:0 "Project Site Established"
  MESSAGE_ARCHAEOLOGY_SITE_DISCOVERED_DESC:0 "We have established a new project site."
+ ARCHAEOLOGICAL_SITE_ON_ROLL_FAILED_RANGE:1 "($CHANCE|%0Y$) Result is between $MIN|0Y$ and $MAX|0Y$. Adds $CLUES|0Y$ insight(s)."
+ ARCHAEOLOGICAL_SITE_ON_ROLL_FAILED_LESS_THAN_EQ:0 "($CHANCE|%0Y$) Result is $MAX|0Y$ or less. Adds $CLUES|0Y$ insights."
 
  EXCAVATION_PROGRESS_TOOLTIP:1 "§HProject Phase§!\nProject sites are worked in phases, at the end of each phase a progress roll is made.\n\nNext phase ends in £time£ $DAYS|Y$"
 
@@ -40,4 +46,8 @@
  ARCHAEOLOGICAL_SITE_MAPICON_TT:0 "$NAME|H$\n$DESC$\n\n§GClick to view Project Site§!"
 
  ARC_DIFFICULTY_TYPE_DESC:0 "Each chapter in a project can have a different difficulty value. Difficulty will reduce the likelihood of getting successful results at the end of a project phase."
- ARC_CLUES_DESC:0 "Clues represent how much information you have uncovered in relation to a chapter in a project.\n\nClues increase §YBreakthrough Chance§!."
+ ARC_CLUES:0 "Insights"
+ ARC_CLUES_DESC:0 "Insights represent how much information you have uncovered in relation to a chapter in a project.\n\nInsights increase §YBreakthrough Chance§!."
+
+EXPEDITION_LOG_ROLL_TOOLTIP:0 "§HPhase Results§!\nInsights Gained: $GAINED|Y$\n\nResult: $RESULT|Y$\n  Roll: $ROLL|Y$\n  Insights: $CLUES|Y$\n  Skill Bonus: $BONUS|Y$\n  Difficulty: $DIFFICULTY|R$\n\n§ERoll Outcomes:§!\n§RFailure§!: Results §Y5§! or less add §Y0§! Insights.\n§YProgress§!: Results between §Y6-10§! add §Y1§! Insights.\n§GProgress§!: Results between §Y11-13§! add §Y2§! Insights."
+ EXPEDITION_LOG_CLUE_TOOLTIP:0 "Insights gained: $CLUES|Y$"
