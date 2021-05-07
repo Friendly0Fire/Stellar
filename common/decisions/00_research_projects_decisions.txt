@@ -1,0 +1,29 @@
+decision_tech_destroyers = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_engineering_research
+
+	resources = {
+		category = decisions
+	}
+
+	potential = {
+		owner = {
+			has_technology = tech_destroyers_unlock
+			NOT = { has_country_flag = tech_destroyers_unlock_@this }
+		}
+	}
+
+	effect = {
+		create_archaeological_site = tech_destroyers_site
+		hidden_effect = {
+			owner = {
+				set_country_flag = tech_destroyers_unlock_@this
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

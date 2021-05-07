@@ -2,7 +2,6 @@
 # This = Country
 on_tech_increased = {
 	events = {
-		techevt.10
 	}
 }
 

@@ -5,6 +5,7 @@
  voidcraft_rp_desc:0 "Researching this technology will unlock a special project focusing on Voidcrafts."
 
  techevt.project.desc:0 "Our scientists are hard at work discovering a new important technology."
+ techevt.decision.desc:0 "Establishes a research project on the planet, enabling progression into the technology."
 
  techevt.phase1.name:0 "Investment Phase"
  techevt.phase2.name:0 "Research Phase"
@@ -28,6 +29,8 @@
  tech_destroyers_site:0 "Destroyers Research Project"
  tech_destroyers_bonus1:0 "Improve hull strength."
  tech_destroyers_bonus2:0 "Improve evasion"
+ decision_tech_destroyers:0 "Establish $tech_destroyers_site$ Site"
+ decision_tech_destroyers_desc:0 "$techevt.decision.desc$"
 
  tech_destroyers_bonus1_modifier:0 "Reinforced Destroyers"
  tech_destroyers_bonus2_modifier:0 "Nimble Destroyers"

@@ -1,19 +1,5 @@
 namespace = techevt
-country_event = {
-	id = techevt.10
-	location = from.capital_scope
-	is_triggered_only = yes
-	trigger = {
-		last_increased_tech = tech_destroyers_unlock
-	}
-	immediate = {
-		set_country_flag = tech_destroyers_unlock_@root
-		capital_scope = {
-			create_archaeological_site = tech_destroyers_site
-		}
-	}
-	hide_window = yes
-}
+
 fleet_event = {
 	id = techevt.11
 	title = "techevt.phase1.name"
