@@ -6,7 +6,7 @@ site_research_project_random_events = {
 	}
 }
 
-set_deployment_cost = {
+update_empire_sprawl = {
 	# Get the sprawl over admin cap
 	if = {
 		limit = {
@@ -24,7 +24,9 @@ set_deployment_cost = {
 
 		}
 	}
+}
 
+set_deployment_cost = {
 	if = {
 		limit = {
 			check_variable = {
@@ -34,20 +36,20 @@ set_deployment_cost = {
 		}
 
 		set_variable = {
-			which = deployment_cost_var_$ID$
+			which = deployment_cost_var_$ID$_$SUBID|0$
 			value = $ADD$
 		}
 		multiply_variable = {
-			which = deployment_cost_var_$ID$
+			which = deployment_cost_var_$ID$_$SUBID|0$
 			value = empire_sprawl_var
 		}
 		change_variable = {
-			which = deployment_cost_var_$ID$
+			which = deployment_cost_var_$ID$_$SUBID|0$
 			value = $BASE$
 		}
 	} else = {
 		set_variable = {
-			which = deployment_cost_var_$ID$
+			which = deployment_cost_var_$ID$_$SUBID|0$
 			value = $BASE$
 		}
 	}
@@ -56,6 +58,9 @@ set_deployment_cost = {
 pay_deployment_cost = {
 	add_resource = {
 		$RESOURCE$ = -1
-		mult = deployment_cost_var_$ID$
+		mult = deployment_cost_var_$ID$_$SUBID|0$
+	}
+	hidden_effect = {
+		clear_variable = deployment_cost_var_$ID$_$SUBID|0$
 	}
 }

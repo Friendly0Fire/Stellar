@@ -2,6 +2,6 @@ can_pay_deployment_cost = {
 	resource_stockpile_compare = {
 		resource = $RESOURCE$
 		value >= 1
-		mult = deployment_cost_var_$ID$
+		mult = deployment_cost_var_$ID$_$SUBID|0$
 	}
 }

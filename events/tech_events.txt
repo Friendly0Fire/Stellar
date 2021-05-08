@@ -138,10 +138,17 @@ fleet_event = {
 			set_site_progress_locked = yes
 		}
 		owner = {
+			update_empire_sprawl = yes
 			set_deployment_cost = {
 				BASE = 200
 				ADD = 10
-				ID = 1
+				ID = 10
+			}
+			set_deployment_cost = {
+				BASE = 100
+				ADD = 20
+				ID = 10
+				SUBID = 1
 			}
 		}
 	}
@@ -156,14 +163,24 @@ fleet_event = {
 			owner = {
 				can_pay_deployment_cost = {
 					RESOURCE = alloys
-					ID = 1
+					ID = 10
+				}
+				can_pay_deployment_cost = {
+					RESOURCE = energy
+					ID = 10
+					SUBID = 1
 				}
 			}
 		}
 		owner = {
 			pay_deployment_cost = {
 				RESOURCE = alloys
-				ID = 1
+				ID = 10
+			}
+			pay_deployment_cost = {
+				RESOURCE = energy
+				ID = 10
+				SUBID = 1
 			}
 		}
 	}
