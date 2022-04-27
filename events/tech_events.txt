@@ -138,7 +138,6 @@ fleet_event = {
 			set_site_progress_locked = yes
 		}
 		owner = {
-			update_empire_sprawl = yes
 			set_deployment_cost = {
 				BASE = 200
 				ADD = 10

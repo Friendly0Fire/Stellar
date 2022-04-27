@@ -6,33 +6,10 @@ site_research_project_random_events = {
 	}
 }
 
-update_empire_sprawl = {
-	# Get the sprawl over admin cap
-	if = {
-		limit = {
-			empire_sprawl_over_cap >= 0x100 # if >= 256, we will take it as a multiple of 16 to get up to 4080 above cap
-		}
-		SLEX_get_custom_parameter = {
-			CONDITION_NAME = empire_sprawl_over_cap
-			VARIABLE = empire_sprawl_var
-			ROUNDING_ZEROES = 0
-		}
-	} else = {
-		SLEX_get_custom_parameter = {
-			CONDITION_NAME = empire_sprawl_over_cap
-			VARIABLE = empire_sprawl_var
-
-		}
-	}
-}
-
 set_deployment_cost = {
 	if = {
 		limit = {
-			check_variable = {
-				which = empire_sprawl_var
-				value > 0
-			}
+			empire_sprawl_over_cap > 0
 		}
 
 		set_variable = {
@@ -41,7 +18,7 @@ set_deployment_cost = {
 		}
 		multiply_variable = {
 			which = deployment_cost_var_$ID$_$SUBID|0$
-			value = empire_sprawl_var
+			value = trigger:empire_sprawl_over_cap
 		}
 		change_variable = {
 			which = deployment_cost_var_$ID$_$SUBID|0$

@@ -1,7 +1,15 @@
 can_pay_deployment_cost = {
-	resource_stockpile_compare = {
-		resource = $RESOURCE$
-		value >= 1
-		mult = deployment_cost_var_$ID$_$SUBID|0$
+	if = {
+		limit = {
+			is_variable_set = deployment_cost_var_$ID$_$SUBID|0$
+		}
+		resource_stockpile_compare = {
+			resource = $RESOURCE$
+			value >= 1
+			mult = deployment_cost_var_$ID$_$SUBID|0$
+		}
+	}
+	else = {
+		always = no
 	}
 }
